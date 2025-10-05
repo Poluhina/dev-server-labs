@@ -1,0 +1,25 @@
+﻿<%- include("partials/header") %>
+
+<h2>Список задач</h2>
+
+<% if (!todos || todos.length === 0) { %>
+  <p>Задач нет. <a href="/new">Добавить задачу</a></p>
+<% } else { %>
+  <ul>
+    <% todos.forEach(function(todo) { %>
+      <li>
+        <form style="display:inline" action="/<%= todo.id %>/toggle" method="POST">
+          <button type="submit"><%= todo.done ? "☑" : "⬜" %></button>
+        </form>
+
+        <span style="margin:0 8px;"><%= todo.text %></span>
+
+        <form style="display:inline" action="/<%= todo.id %>/delete" method="POST">
+          <button type="submit">Удалить</button>
+        </form>
+      </li>
+    <% }); %>
+  </ul>
+<% } %>
+
+<%- include("partials/footer") %>
