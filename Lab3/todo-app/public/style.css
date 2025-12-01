@@ -1,0 +1,83 @@
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background: #fdf2f8; 
+  color: #1e293b;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #ec4899; 
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 700px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(236, 72, 153, 0.15);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #fce7f3; /* светло-розовые карточки */
+  margin: 8px 0;
+  padding: 10px 14px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  border: none;
+  background: #ec4899;
+  color: white;
+  border-radius: 5px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s ease, transform 0.1s ease;
+  margin: 10px;
+}
+
+button:hover {
+  background: #db2777;
+  transform: scale(1.05);
+}
+
+form {
+  display: inline;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  color: #9d174d;
+  font-size: 0.9rem;
+}
